@@ -1,0 +1,21 @@
+{
+	"Functional Component": {
+		"scope": "javascript,html",
+		"prefix": "rfc",
+		"body": [
+		  "import React, { useEffect, useState } from 'react'",
+		  " ",
+		  "export const ${1:ComponentName} = () => {",
+		  "  return (",
+		  "  <> ",
+		  "    $0",
+		  "  </> ",
+		  "  )",
+		  "}",
+		  " ",
+		 
+		],
+		"description": "Create Functional Component"
+	  }
+	}
+	
