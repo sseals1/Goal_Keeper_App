@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Introduction
 
 This is a MVP demonstration of my mid-term Individual NSS Project
@@ -85,8 +86,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
+>>>>>>> main
+=======
 
 # kandy-korner
 # Goal_Keeper_Cap_Project_API
+<<<<<<< HEAD
+=======
+>>>>>>> cf81dfcc4fb23874d367d3888bafac937d9ed7cb
+>>>>>>> main
 # Goal_Keeper_App
 >>>>>>> cf81dfcc4fb23874d367d3888bafac937d9ed7cb
