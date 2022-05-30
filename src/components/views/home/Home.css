@@ -1,0 +1,20 @@
+.home-style {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+.button-box {
+    width: 20%;
+    border: solid;
+    background-color: #fe3c7a;
+    border-radius: 4px;
+    text-align: center;
+    text-align: break-word;
+    margin-inline: auto;
+    padding: 30px 30px;
+    color: white;
+    font-size:12px;
+    display: flex;
+    -webkit-appearance: button;
+    justify-content: center;
+}
