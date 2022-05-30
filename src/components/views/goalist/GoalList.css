@@ -1,0 +1,80 @@
+.goal_list {
+    margin-top: 4%;
+/* display: flex; */
+/* justify-content: flex-end; */
+border: solid 1px;
+width: 40%;
+}
+
+.goals {
+    margin-left: auto;
+}
+
+.category {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-top: 10px;
+    margin-top: 10px;
+    /*   */
+    /* margin-right: 10%; */
+}
+.priority {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-top: 10px;
+    /*   */
+    /* margin-right: 10%; */
+}
+.term {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-top: 10px;
+    /*   */
+    /* margin-right: 10%; */
+}
+
+.title-myGoals {
+    /*   */
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding-left: 10%;
+}
+
+.drop-btn {
+    justify-content: flex-end;
+    margin-left: 120%;
+}
+.container {
+    width: 70%;
+}
+.category1 {
+    background-color: #EC7063;
+}
+.category2 {
+    background-color: #BB8FCE;
+}
+.category3 {
+    background-color: #5DADE2;
+}
+.category4 {
+    background-color: #52BE80;
+}
+.category5 {
+    background-color: #F4D03F;
+}
+.category6 {
+    background-color: #DC7633;
+}
+.category7 {
+    background-color: #641E16;
+}
+.category8 {
+    background-color: #154360;
+}
+
+.create_goal-btn {
+    background-color: #fe3c7a;
+    color: white;
+    border: solid;
+}

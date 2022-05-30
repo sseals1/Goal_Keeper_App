@@ -1,0 +1,93 @@
+  .track_goal-btn {
+    background-color: #fe3c7a;
+    border: solid;
+    border-radius: 4px;
+    text-align: center;
+    /* margin-inline: auto; */
+    padding: 12px 20px;
+    color: white;
+    font-size:12px;
+    display: flex;
+     -webkit-appearance: button;
+    justify-content: center;
+    margin-bottom: 120%;
+}
+
+.form-group {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: flex-end; */
+        
+        /* margin-left: 6%;
+        width:26%;
+        height: 1%;
+        border-left-width: thick;
+        box-sizing: border-box;
+        border-width: solid 2px; */
+    }
+/* btn-shif-right {
+    text-align: right;
+ }  */
+
+/* .dropdown-group { */
+          /* display: flex; */
+          /* flex-wrap: wrap; */
+          /* justify-content: center */
+        
+        /* flex-direction: row; */
+        /* margin-left: 40em;
+        margin-top: 30px;
+         margin-left: 40%;
+         justify-content: flex-end;
+        display:inline-block;
+   
+    width:25%;
+   height:10%;
+   background-color: lightgrey; */
+/* } */
+
+/* .option-font {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 20%;
+    font-size: 10px;
+}
+
+.opdrop {
+    margin-left: 30%;
+}
+
+
+.form-date {
+    margin-top: 2%;
+    margin-left: 12%;
+    width: 8%;
+}
+
+.goalForm__title {
+    margin-left: 14%;
+    margin-top: 2%;
+}
+
+.textarea {
+    height: 50%;
+    width: 80%;
+}
+
+.drop-title {
+    margin-right: 20em;
+        margin-top: 30px;
+        margin-left: 45%;
+        justify-content: flex-end;
+        font-weight: bold;
+} */ 
+/* .form-control {
+    margin-top: 1%;
+ } */
+
+.goal-title {
+    font-size: 10;
+    margin-top: 30px;
+} 
+
