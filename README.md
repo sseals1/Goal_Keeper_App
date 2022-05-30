@@ -1,5 +1,3 @@
-# kandy-korner
-
 # Goal_Keeper_App
 =======
 # Introduction
