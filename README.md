@@ -1,5 +1,3 @@
-
-
 # Goal_Keeper_App
 ==================
 # Introduction
@@ -87,4 +85,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> e25a590655afdf9b73ed3c82ee18b13569206c53
