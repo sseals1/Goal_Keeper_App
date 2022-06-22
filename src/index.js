@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { GoalKeeper } from "./components/GoalKeeper";
+import { Goalify } from "./components/Goalify"
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-        <GoalKeeper />
+        <Goalify />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

@@ -1,80 +1,104 @@
-.goal_list {
-    margin-top: 4%;
-/* display: flex; */
-/* justify-content: flex-end; */
-border: solid 1px;
-width: 40%;
+.goal_list1 {
+  /* margin-top: 4%;
+  display: flex;
+  justify-content: flex-start; */
+  /* border: solid black 1px; */
+  /* margin-left: 30px; */
+}
+.goal_list{
+  margin-left: 20px;
+}
+
+.goal_props{
+  display: flex;
+  flex-direction: column;
 }
 
 .goals {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .category {
-    display: flex;
-    flex-flow: row-reverse;
-    margin-top: 10px;
-    margin-top: 10px;
-    /*   */
-    /* margin-right: 10%; */
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 10px;
+  margin-top: 10px;
+  /*   */
+  /* margin-right: 10%; */
 }
 .priority {
-    display: flex;
-    flex-flow: row-reverse;
-    margin-top: 10px;
-    /*   */
-    /* margin-right: 10%; */
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 10px;
+  /*   */
+  /* margin-right: 10%; */
 }
 .term {
-    display: flex;
-    flex-flow: row-reverse;
-    margin-top: 10px;
-    /*   */
-    /* margin-right: 10%; */
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 10px;
+  /*   */
+  /* margin-right: 10%; */
 }
 
 .title-myGoals {
-    /*   */
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    padding-left: 10%;
+  /*   */
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding-left: 10%;
 }
 
 .drop-btn {
-    justify-content: flex-end;
-    margin-left: 120%;
+  justify-content: flex-end;
+  margin-left: 120%;
+  margin-bottom: 1em;
+  width: 20%;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 .container {
-    width: 70%;
+  width: 70%;
 }
 .category1 {
-    background-color: #EC7063;
+  background-color: #ec7063;
 }
 .category2 {
-    background-color: #BB8FCE;
+  background-color: #bb8fce;
 }
 .category3 {
-    background-color: #5DADE2;
+  background-color: #5dade2;
 }
 .category4 {
-    background-color: #52BE80;
+  background-color: #52be80;
 }
 .category5 {
-    background-color: #F4D03F;
+  background-color: #f4d03f;
 }
 .category6 {
-    background-color: #DC7633;
+  background-color: #dc7633;
 }
 .category7 {
-    background-color: #641E16;
+  background-color: #d4efdf;
 }
 .category8 {
-    background-color: #154360;
+  background-color: #154360;
 }
 
 .create_goal-btn {
-    background-color: #fe3c7a;
-    color: white;
-    border: solid;
+  background-color: #fe3c7a;
+  color: white;
+  border: solid;
+}
+
+.edit_goal-btn {
+  justify-content: flex-end;
+  margin-left: 120%;
+  /* margin-bottom: 1em; */
+  width: 20%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #fe3c7a;
+  color: white;
+  border: solid;
 }

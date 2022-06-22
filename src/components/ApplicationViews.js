@@ -7,7 +7,10 @@ import { GoalList } from "./views/goalist/GoalList";
 import { GoalMilestone } from "./views/milestone/GoalMilestone"
 import { Home } from "./views/home/Home";
 import { Tips } from "./views/suggestions/Tips"
-import { YearInReview } from "./views/YearInReview"
+import { YearInReview } from "./views/review/YearInReview"
+import { FilterByWeek } from "./views/filteredGoals/FilterByWeek"
+import { FilterByMonth } from "./views/filteredGoals/FilterByMonth"
+import { GoalNotes } from "./views/notes/GoalNotes"
 
 export const ApplicationViews = () => {
   return (
@@ -39,11 +42,25 @@ export const ApplicationViews = () => {
       <Route path="/goals/:goalsId(\d+)">
         <GoalMilestone />
       </Route>
+
       <Route path="/tips/:tipsId(\d+)">
         <Tips />
       </Route>
+
       <Route exact path="/milefilled">
         <MileFilled />
+      </Route>
+
+      <Route exact path="/filterbyweek">
+        <FilterByWeek />
+      </Route>
+
+      <Route exact path="/filterbymonth">
+        <FilterByMonth />
+      </Route>
+      
+      <Route exact path="/goalnotes/:goalsId(\d+)">
+        <GoalNotes />
       </Route>
       
     </>

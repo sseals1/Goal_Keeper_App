@@ -2,7 +2,7 @@ import { getSpaceUntilMaxLength } from "@testing-library/user-event/dist/utils";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useParams, useHistory } from "react-router-dom";
-import { getGoal, getMilestones } from "../../ApiManager";
+import { GetGoal, getMilestones } from "../../ApiManager";
 import "./GoalMilestone.css";
 
 export const GoalMilestone = () => {
@@ -17,14 +17,17 @@ export const GoalMilestone = () => {
   const [notes, setNotes] = useState({});
   const [milestone, setMilestone] = useState([]);
 
-  const saveMilestone = () => {
-    const milestoneChecker = milestone.find((mileObj) => {
-      return (
-        mileObj.userId === parseInt(localStorage.getItem("goal_keeper")) &&
-        mileObj.goalId === parseInt(goalsId)
-      );
-    });
+  const milestoneChecker = milestone.find((mileObj) => {
+    return (
+      mileObj.userId === parseInt(localStorage.getItem("goal_keeper")) &&
+      mileObj.goalId === parseInt(goalsId)
+    );
+  });
 
+
+
+  const saveMilestone = () => {
+    
     const newMilestoneObject = {
       direction: direction,
       defined: defined,
@@ -37,7 +40,7 @@ export const GoalMilestone = () => {
     };
 
     if (milestoneChecker) {
-      fetch(`http://localhost:8088/milestones/${goalsId}`, {
+      fetch(`http://localhost:8088/milestones/${milestoneChecker.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +48,7 @@ export const GoalMilestone = () => {
         body: JSON.stringify(newMilestoneObject),
       })
       .then(() => {
-      history.push("/milefilled");
+      history.push("/mygoals");
       });
     } else {
       const fetchObject = {
@@ -62,16 +65,32 @@ export const GoalMilestone = () => {
   };}
 
   useEffect(() => {
-    getGoal(parseInt(goalsId)).then((data) => {
+    GetGoal(parseInt(goalsId)).then((data) => {
       setGoal(data);
     });
   }, []);
 
   useEffect(() => {
-    getMilestones().then((data) => {
+    getMilestones()
+    .then((data) => {
       setMilestone(data);
     });
   }, []);
+
+
+  useEffect(() => {
+      if (milestoneChecker) {
+        setDirection(milestoneChecker.direction)
+        setDefined(milestoneChecker.defined)
+        setProgress(milestoneChecker.progress)
+        setFeatures(milestoneChecker.features)
+        setAttained(milestoneChecker.attained)
+        setNotes(milestoneChecker.notes)
+      }
+  
+  },[milestone])
+
+
 
   return (
     <>
@@ -84,7 +103,7 @@ export const GoalMilestone = () => {
                 className="dirbx"
                 type="checkbox"
                 label="My Value"
-                value={""}
+                checked={direction}
                 onChange={(event) => {
                   setDirection(event.target.checked);
                 }}
@@ -107,7 +126,7 @@ export const GoalMilestone = () => {
                 className="defbx"
                 type="checkbox"
                 label="My Value"
-                value={""}
+                checked={defined}
                 onChange={(event) => {
                   setDefined(event.target.checked);
                 }}
@@ -130,7 +149,7 @@ export const GoalMilestone = () => {
                 className="featbx"
                 type="checkbox"
                 label="My Value"
-                value={""}
+                checked={progress}
                 onChange={(event) => {
                   setProgress(event.target.checked);
                 }}
@@ -153,7 +172,7 @@ export const GoalMilestone = () => {
                 className="featbx"
                 type="checkbox"
                 label="My Value"
-                value={""}
+                checked={features}
                 onChange={(event) => {
                   setFeatures(event.target.checked);
                 }}
@@ -177,7 +196,7 @@ export const GoalMilestone = () => {
                 type="checkbox"
                 transform="scale(4)"
                 label="My Value"
-                value={""}
+                checked={attained}
                 onChange={(event) => {
                   setAttained(event.target.checked);
                 }}
@@ -206,6 +225,7 @@ export const GoalMilestone = () => {
               <Row>
                 <Col>
               <textarea
+                value={notes}
                 className="textarea"
                 placeholder="Enter milestone notes here..."
                 onChange={(event) => {

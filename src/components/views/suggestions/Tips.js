@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getTips } from "../../ApiManager";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col} from "react-bootstrap"
+import "./Tips.css"
 
 export const Tips = () => {
   const [tips, setTips] = useState({});
@@ -19,12 +20,12 @@ export const Tips = () => {
 
     <Container>
       <Row>
-        <h4>{tips.suggestion}</h4>
-      </Row>
-      <Row>
-        <Col xs={6}>{tips.tip}</Col>
+        <h4 className="h4">{tips.suggestion}</h4>
       </Row>
       <div className="tips">
+      <Row>
+        <Col xs={5}>{tips.tip}</Col>
+      </Row>
         <label htmlFor="name"></label>
        
          

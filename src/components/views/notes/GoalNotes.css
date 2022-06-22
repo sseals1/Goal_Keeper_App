@@ -1,0 +1,15 @@
+.update-btn {
+    background-color: #fe3c7a;
+    border: solid;
+    border-radius: 4px;
+    text-align: center;
+    /* margin-inline: auto; */
+    padding: 12px 20px;
+    color: white;
+    font-size:12px;
+    display: flex;
+     -webkit-appearance: button;
+    justify-content: center;
+    margin-bottom: 120%;
+    margin-top: 20px;
+}
