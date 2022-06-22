@@ -22,7 +22,7 @@ export const Login = () => {
             .then(exists => {
                 if (exists) {
                     localStorage.setItem("goal_keeper", exists.id)
-                    history.push("/mygoals")
+                    history.push("/goalform")
                 } else {
                     existDialog.current.showModal()
                 }

@@ -104,21 +104,25 @@ export const GoalForm = () => {
   };
 
   useEffect(() => {
-    GoalCategory().then((data) => {
+    GoalCategory()
+    .then((data) => {
       setCategory(data);
     });
   }, []);
 
   useEffect(() => {
-    GoalPriority().then((data) => [setPriority(data)]);
+    GoalPriority()
+    .then((data) => [setPriority(data)]);
   }, []);
 
   useEffect(() => {
-    TimeFrame().then((data) => {
+    TimeFrame()
+    .then((data) => {
       setTimeFrame(data);
     });
   }, []);
 
+  
   return (
       <Container className="container">
     <form className="goalForm">
@@ -181,7 +185,7 @@ export const GoalForm = () => {
       <fieldset>
         {/* <div className="form-date"> */}
         <div className="form-group">
-          <label htmlFor="name">Goal Start Date:</label>
+          <label htmlFor="name">Projected Completion Date:</label>
           <input
             required
             autoFocus

@@ -1,5 +1,5 @@
 # Goal_Keeper_App
-==================
+
 # Introduction
 
 This is a MVP demonstration of my mid-term Individual NSS Project
