@@ -61,7 +61,7 @@ export const GoalForm = () => {
       body: JSON.stringify(goalObj),
       // the body of the fetch object has to be converted to JSON string
     };
-    // console.log(goalObj);
+    
     return (
       fetch("http://localhost:8088/goals", fetchOption)
         // the fetchOption object is being sent to the url in the return fetch

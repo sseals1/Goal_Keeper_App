@@ -8,7 +8,7 @@ export const MileFilled = () => {
   const [milestone, setMilestone] = useState({});
   const history = useHistory();
 
-  console.log(milestone);
+  
 
   useEffect(() => {
     getFilledMilestones(goalsId)
@@ -18,11 +18,6 @@ export const MileFilled = () => {
   },[])
 
   
-  // useEffect(() => {
-    //   getMilestones().then((data) => {
-      //     setMilestone(data);
-      //   });
-      // },[]);
       
       return (
         <>

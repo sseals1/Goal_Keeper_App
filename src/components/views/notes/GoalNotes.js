@@ -14,14 +14,12 @@ export const GoalNotes = () => {
     GetGoal(goalsId)
     .then((data) => {
       setGoals(data);
-      console.log(data)
     });
   }, [goalsId]);
 
   const editNotes = (e) => {
       e.preventDefault();
-    const noteObj = {
-        ...goals,   
+    const noteObj = {...goals,   
         notes: goalNotes,
     };
 

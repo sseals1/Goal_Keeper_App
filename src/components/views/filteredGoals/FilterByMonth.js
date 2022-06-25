@@ -6,21 +6,12 @@ export const FilterByMonth = () => {
 
   useEffect(() => {
     ListOfGoals().then((data) => {
-      setGoalList(data);
+      setGoalList(data.filter((item) => {
+        return item.userId === parseInt(localStorage.getItem("goal_keeper"));
+      }));
     });
   }, []);
 
-  //     const filterByMonth = () => {
-  //         return (
-  //           <div>
-  //             {goalList.filter(goal => goal.includes("p")).map(filteredGoal => (
-  //             <li>
-  //               {filteredGoal}
-  //               </li>
-  //             ))}
-  //           </div>
-  //         )
-  //       }
 
   let date = new Date();
   date.setDate(date.getDate() + 30);
@@ -45,9 +36,9 @@ export const FilterByMonth = () => {
                 {filteredGoal.goalDate}
               </p>
             </div>
-          ))}
+          )).reverse()}
       </div>
-      {console.log()}
+      
     </>
   );
 };

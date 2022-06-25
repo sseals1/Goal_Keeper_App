@@ -12,10 +12,11 @@ export const Register = (props) => {
     
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/users`)
+        return fetch(`http://localhost:8088/users?email=${users.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
     }
+
     const handleRegister = (e) => {
         e.preventDefault()
         existingUserCheck()
@@ -57,7 +58,7 @@ export const Register = (props) => {
             </dialog>
 
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="reg-head">Please Register for Goal Keep</h1>
+                <h1 className="reg-head">Please Register for Goalify</h1>
                 <fieldset>
                     <label htmlFor="name"> Full Name </label>
                     <input onChange={updateUsers}

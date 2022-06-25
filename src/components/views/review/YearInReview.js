@@ -73,6 +73,7 @@ export const YearInReview = () => {
 
   return (
     <>
+    <h4 className="review_title">Year In Review</h4>
       {goals
         .map((goalObj) => {
           const currentMilestone = milestoneChecker(goalObj.id);

@@ -95,7 +95,7 @@ export const GoalMilestone = () => {
   return (
     <>
       <Container className="container">
-        <h3 className="milestone-rev">Milstone Review</h3>
+        <h4 className="milestone-rev">Milstone Review</h4>
         <Container>
           <fieldset>
             <div className="form-group">
@@ -108,10 +108,10 @@ export const GoalMilestone = () => {
                   setDirection(event.target.checked);
                 }}
               />
-
-              <Row>
+              
+              <Row xs={10}>
                 <Col>
-                  <label className="title" htmlFor="name">
+                  <label className="mile_title" htmlFor="name">
                     Overall Direction
                   </label>
                 </Col>
@@ -134,7 +134,7 @@ export const GoalMilestone = () => {
 
               <Row>
                 <Col>
-                  <label className="title" htmlFor="name">
+                  <label className="mile_title" htmlFor="name">
                     Flushed And Defined
                   </label>
                 </Col>
@@ -157,7 +157,7 @@ export const GoalMilestone = () => {
 
               <Row>
                 <Col>
-                  <label className="title" htmlFor="name">
+                  <label className="mile_title" htmlFor="name">
                     Tangible Progress Made
                   </label>
                 </Col>
@@ -180,7 +180,7 @@ export const GoalMilestone = () => {
 
               <Row>
                 <Col>
-                  <label className="title" htmlFor="name">
+                  <label className="mile_title" htmlFor="name">
                     Features Completed
                   </label>
                 </Col>
@@ -204,7 +204,7 @@ export const GoalMilestone = () => {
 
               <Row>
                 <Col>
-                  <label className="title" htmlFor="name">
+                  <label className="mile_title" htmlFor="name">
                     Goal Objective Attained
                   </label>
                 </Col>
@@ -214,10 +214,10 @@ export const GoalMilestone = () => {
         </Container>
         <Container>
           <fieldset>
-            <div className="form-group">
+            {/* <div className="form-group"> */}
               <Row>
                 <Col>
-                  <label className="title" htmlFor="name">
+                  <label className="mile_title" htmlFor="name">
                     Notes
                   </label>
                 </Col>
@@ -225,7 +225,7 @@ export const GoalMilestone = () => {
               <Row>
                 <Col>
               <textarea
-                value={notes}
+                //value={notes}
                 className="textarea"
                 placeholder="Enter milestone notes here..."
                 onChange={(event) => {
@@ -234,7 +234,7 @@ export const GoalMilestone = () => {
               ></textarea>
                </Col>
               </Row>
-            </div>
+            {/* </div> */}
           </fieldset>
         </Container>
 

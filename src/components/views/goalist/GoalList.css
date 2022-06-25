@@ -1,17 +1,26 @@
-.goal_list1 {
-  /* margin-top: 4%;
+/* .goal_list1 {
+  margin-top: 4%;
   display: flex;
-  justify-content: flex-start; */
-  /* border: solid black 1px; */
-  /* margin-left: 30px; */
-}
-.goal_list{
-  margin-left: 20px;
+  justify-content: flex-start;
+  border: solid black 1px;
+  margin-left: 30px;
+} */
+.goal_list2{
+  margin-top: 4%;
+  display: flex;
+  justify-content: flex-end;
+  border: solid 1px;
+  width: 60%;
+  margin-bottom: 40px;
+  /* height: 1000px; */
+  /* padding-bottom: 10%; */
+  margin-left: 0;
 }
 
 .goal_props{
   display: flex;
   flex-direction: column;
+  /* margin-left: 10em; */
 }
 
 .goals {
@@ -23,28 +32,22 @@
   flex-flow: row-reverse;
   margin-top: 10px;
   margin-top: 10px;
-  /*   */
-  /* margin-right: 10%; */
+ 
 }
 .priority {
   display: flex;
   flex-flow: row-reverse;
   margin-top: 10px;
-  /*   */
-  /* margin-right: 10%; */
 }
 .term {
   display: flex;
   flex-flow: row-reverse;
   margin-top: 10px;
-  /*   */
-  /* margin-right: 10%; */
 }
 
 .title-myGoals {
-  /*   */
   margin-right: 10%;
-  margin-top: 5%;
+  margin-top: 2px;
   margin-bottom: 2%;
   padding-left: 10%;
 }
@@ -94,7 +97,7 @@
 .edit_goal-btn {
   justify-content: flex-end;
   margin-left: 120%;
-  /* margin-bottom: 1em; */
+  margin-bottom: 1em;
   width: 20%;
   table-layout: fixed;
   border-collapse: collapse;

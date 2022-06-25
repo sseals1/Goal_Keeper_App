@@ -12,7 +12,7 @@ export const Tips = () => {
     getTips(tipsId)
     .then((data) => {
       setTips(data);
-      console.log(data)
+      
     });
   },[]);
 

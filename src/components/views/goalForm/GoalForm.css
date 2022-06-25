@@ -16,16 +16,16 @@
 .form-group {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: flex-end; */
-  margin-top: 8%;
+  margin-top: 2%;
   margin-left: 6%;
   width: 100%;
-  height: 1%;
-  border-left-width: thick;
+  height: 4%;
+  /* border-left-width: thick; */
   box-sizing: border-box;
-  border-width: solid 2px;
-  margin-bottom: 4%;
+  /* border-width: solid 2px; */
+  margin-bottom: 1%;
 }
+/* justify-content: flex-end; */
 /* btn-shif-right {
     text-align: right;
  }  */
@@ -72,26 +72,26 @@
     width: 80%;
 }
 
+/* .form-control {
+    margin-top: 1%;
+} */
 .drop-title {
     margin-right: 20em;
         margin-top: 30px;
         margin-left: 45%;
         justify-content: flex-end;
         font-weight: bold;
-    } */
-/* .form-control {
-    margin-top: 1%;
-} */
+    } 
 
 .goal-title {
   font-size: 10;
   margin-top: 50px;
   margin-left: 10%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .goalForm__title {
     margin-left: 10%;
-    margin-top: 4%;
-    margin-bottom: 10%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }

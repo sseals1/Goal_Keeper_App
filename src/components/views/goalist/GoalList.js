@@ -102,10 +102,10 @@ export const GoalList = () => {
       {goallist
         .map((goal) => {
           return (
-            <div key={goal.id} className="goal_list">
+            <div key={goal.id} className="goal_list2">
               <Container>
-                <Row xs={12}>
-                  <Col className="goal_list1" md={8}>
+                <Row>
+                  <Col className="goal_list1">
                     <Link onClick={saveMilestone} to={`/goals/${goal.id}`}>
                       <div className="goal_props">
                       Goal description: {goal.goalDescription}

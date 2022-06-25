@@ -7,8 +7,10 @@ export const FilterByWeek = () => {
 
   useEffect(() => {
     ListOfGoals().then((data) => {
-      setGoalList(data);
-      // console.log(data)
+      setGoalList(data.filter((item) => {
+        return item.userId === parseInt(localStorage.getItem("goal_keeper"));
+      }));
+      
     });
   }, []);
 
@@ -32,10 +34,10 @@ export const FilterByWeek = () => {
                </p>
               </div>
               
-            )))
+            )).reverse())
         }
       </div>
-      {console.log()}
+      
     </>
   );
 };
