@@ -12,7 +12,8 @@ This is a MVP demonstration of my mid-term Individual NSS Project
 
 
 
-
+# ERD: https://dbdiagram.io/d/6282fad97f945876b62dfc13
+# Wireframe: https://sketchboard.me/zCULqeUotfzf
 
 # Purpose & motivation for project
 The purpose of this app is to provide a simple 
