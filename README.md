@@ -3,6 +3,7 @@
 # Introduction
 
 This is a MVP demonstration of my mid-term Individual NSS Project
+# Technologies Used: ![image](https://user-images.githubusercontent.com/91228783/185190550-8a2542c1-945a-4d0b-95e7-0c76aa6d194c.png)
 
 # Purpose & motivation for project
 The purpose of this app is to provide a simple 
