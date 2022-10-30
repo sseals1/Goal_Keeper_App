@@ -1,4 +1,4 @@
-# Goal_Keeper_App
+# Goal_Keeper_App_FrontEnd_Capstone_Project
 
 # Introduction
 
